@@ -1,3 +1,6 @@
-let sales: number = 123_456_789;
-let course: string = 'Typescript';
-let is_published: boolean = true;
+function calculateTax(income: number, taxYear = 2022): number {
+    if (taxYear < 2024)
+        return income * 1.2;
+    else
+        return income * 1.3;
+}
